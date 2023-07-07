@@ -1,3 +1,4 @@
 ARG VERSION
 FROM almalinux:${VERSION}
-RUN echo "Version value is: ${VERSION}"
+ARG GREETING
+RUN echo "duration is: ${GREETING}"
